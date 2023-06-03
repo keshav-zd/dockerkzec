@@ -1,0 +1,20 @@
+<root>
+
+    <dim_table>my_dimension_table</dim_table>
+    <query>staging5</query>
+    <column_mapping1 dim_column="zip_code" s_column="zip_code" data_type="INT"/>
+    <column_mapping1 dim_column="date_m" s_column="date" data_type="DATE"/>
+    <column_mapping1 dim_column="daily_dose" s_column="total_doses_daily" data_type="INTEGER"/>
+    <column_mapping1 dim_column="first_dose" s_column="_1st_dose_daily" data_type="INTEGER"/>
+    <column_mapping1 dim_column="zip_loc" s_column="zip_code_location" data_type="VARCHAR"/>
+
+
+    <final_table>final_table</final_table>
+    <staging>staging5</staging>
+    <column_mapping2 final_column="zip_code_f" s_column="zip_code" data_type="INTEGER"/>
+    <column_mapping2 final_column="date_f" s_column="date" data_type="DATE"/>
+    <column_mapping2 final_column="daily_dose_f" s_column="total_doses_daily" data_type="INTEGER"/>
+    <column_mapping2 final_column="first_dose_f" s_column="_1st_dose_daily" data_type="INTEGER"/>
+    <column_mapping2 final_column="zip_loc_f" s_column="zip_code_location" data_type="VARCHAR"/>
+
+</root>
